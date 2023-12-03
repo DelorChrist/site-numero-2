@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>XPRESS LIVRAISON</title>
+</head>
+<body>
+
+    <div id="loader">
+        <div id="loader-container" class="loader-container">
+            <div class="loader">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <p>Chargement en cours...</p>
+        </div>
+    </div>
+    
+    <header>
+        <div id="navbar">
+            <div class="logo">
+                <a href="index.html"><h2>XPRESS<span>LIV</span></h2></a>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#Accueil" id="Accueil" class="scroll-link"><i class="fas fa-home"></i> Accueil</a></li>
+                    <li><a href="#services" class="scroll-link"><i class="fas fa-search"></i> Services</a></li>
+                    <div class="dropdown">
+                        <a href="#"><i class="fas fa-envelope"></i>Devenir partenaire</a>
+                        <div class="dropdown-content">
+                            <a href="#" onclick="toggleForm('inscription')">Acheter des parts</a>
+                            <a href="#" onclick="toggleForm('connexion')">Faire carriere</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#"><i class="fas fa-user"></i> Inscription ou Connexion</a>
+                        <div class="dropdown-content">
+                            <a href="inscription.html" onclick="toggleForm('inscription')">Inscription</a>
+                            <a href="connexion.html" onclick="toggleForm('connexion')">Connexion</a>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+
+        <section>
+            <h2>Vos courses et vos plats préférés, livrés chez vous.</h2><br>
+            <p>Entrez une adresse pour plus de precision</p>
+            <div class="search-box">
+                <input type="text" placeholder="Saisissez votre adresse" class="search-input">
+                <button type="button" class="search-button">Chercher</button>
+            </div>
+            
+            <p class="lien"><span>Connectez-vous </span> pour vos prochaines adresses.</p>
+        </section>
+    </header>
+
+   <div class="content">
+
+    <div class="image-defilante">
+        <img src="images/image1.png" alt="Image 1">
+        <img src="images/image2.jpg" alt="Image 2">
+        <img src="images/image4.jpeg" alt="Image 1">
+        <img src="images/imageKFC.jpeg" alt="Image 2">
+        <img src="images/image3.jpg" alt="Image 3">
+    </div>
+
+    <div class="div2" id="localisation">
+        <div class="div2-info">
+            <h1>Suivez votre commande en direct</h1>
+            <p>Faites-vous livrer votre envie du moment en un rien de temps. 
+            Voyez quand votre commande est prête, suivez son trajet jusqu’à chez vous et 
+            recevez une notification lorsqu’elle n’est pas loin.</p>
+            <div class="bouton-info">
+                <button>Annuler la commande</button>
+                <button>Suivre son colis en temps réèlle</button>
+            </div>
+        </div>
+        <div class="div2-image">
+            <img src="images/location.jpeg" alt="">
+        </div>
+    </div>
+
+   </div>
+
+   <div class="formule" id="services">
+       <div class="formule-contenu">
+        <h1>Profitez de formules jusqu'à -25 %</h1>
+        <h2>Besoin de vous faire plaisir ou envie de savourer votre plat préféré ? Notre offre n'attend que vous.</h2>
+        <p>Frais de service et de livraison applicables. Sous réserve de disponibilité, uniquement dans les restaurants participants. <a href="">Voir les conditions générales.</a>
+        </p>
+       </div>
+       <button><a href="inscription.html">S'inscrire pour profiter</a></button>
+   </div>
+
+   <div class="apres-formule">
+    <div class="apres1">
+        <img src="images/coursier.jpeg" alt="">
+        <div class="div-element">
+            <h1>Collaborer avec nous</h1>
+            <p>Rejoignez Deliveroo et touchez une clientèle toujours plus nombreuse. Votre livraison est entre de bonnes mains.</p>
+            <button>Demarrer</button>
+        </div>
+    </div>
+
+    <div class="apres1">
+        <img src="images/coursier1.jpeg" alt="">
+        <div class="div-element">
+            <h1>Collaborer avec nous</h1>
+            <p>Rejoignez Deliveroo et touchez une clientèle toujours plus nombreuse. Votre livraison est entre de bonnes mains.</p>
+            <button>Demarrer</button>
+        </div>
+    </div>
+   </div>
+
+   <footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Navigation</h3>
+            <a href="#Accueil" class="scroll-link">Accueil</a>
+            <a href="#services" class="scroll-link">Services</a>
+            <a href="#localisation" class="scroll-link">Localisation</a>
+            <a href="inscription.html">Inscription</a>
+        </div>
+        
+        <div class="newsletter">
+            <h3>Newsletter</h3>
+            <p>Abonnez-vous à notre newsletter pour les dernières mises à jour.</p>
+            <input type="email" placeholder="Votre adresse email">
+            <button>S'abonner</button>
+        </div>
+
+        <div class="contact">
+            <h3>Contactez-nous</h3>
+            <p>Email: Sergedelorbagui56@gmail.com</p>
+            <p>Téléphone: +225 0501589009</p>
+            <p>Adresse: Abidjan, Adjamé, Côte D'Ivoire</p>
+        </div>
+
+        <div class="social-icons">
+            <h3>Nos reseaux sociaux</h3>
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Twitter</a>
+            <a href="#" target="_blank">Instagram</a>
+            <a href="https://drive.google.com/file/d/1JQnzBjXMnn6MT9pElIwvRvQ-Hschrw-Q/view?usp=drive_link" target="_blank">Ma video</a>
+        </div>
+    </div>
+    
+    <div class="copyright">
+        &copy; 2023 ESATIC DASI 3. Tous droits réservés.
+    </div>
+</footer>
+
+   <script src="script.js"></script>
+</body>
+</html>

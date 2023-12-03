@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="connexion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Formulaire d'inscription</title>
+</head>
+<body>
+
+    <div id="loader">
+        <div id="loader-container" class="loader-container">
+            <div class="loader">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <p>Chargement en cours...</p>
+        </div>
+    </div>
+
+
+    <header>
+
+        <div id="navbar">
+            <div class="logo">
+                <a href="index.html"><h2>XPRESS<span>LIV</span></h2></a>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                    <li><a href="#"><i class="fas fa-search"></i> Services</a></li>
+                    <div class="dropdown">
+                        <a href="#"><i class="fas fa-envelope"></i>Devenir partenaire</a>
+                        <div class="dropdown-content">
+                            <a href="#" onclick="toggleForm('inscription')">Acheter des parts</a>
+                            <a href="#" onclick="toggleForm('connexion')">Faire carriere</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#"><i class="fas fa-user"></i> Inscription ou Connexion</a>
+                        <div class="dropdown-content">
+                            <a href="inscription.html" onclick="toggleForm('inscription')">Inscription</a>
+                            <a href="connexion.html" onclick="toggleForm('connexion')">Connexion</a>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="formulaire">
+
+        <h1>Connexion</h1>
+        <form action="" method="post">
+            <input type="text" placeholder="Nom D'utilisateur" required>
+            <input type="password" placeholder="Entrez votre mot de passe">   
+            <div class="recover">
+                <a href="">Mot de passe oublié ? </a>
+            </div>     
+        </form>
+
+        <button>Se connecter</button>
+        <div class="member">
+            Pas encore inscrit ? <a href="inscription.html">Creer un compte ici</a>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
